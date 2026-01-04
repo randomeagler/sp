@@ -1,1 +1,3 @@
-java -jar sp.jar
+#!/bin/bash
+echo starting...
+java -Xmx1024M -Xms1024M -jar sp.jar
