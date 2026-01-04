@@ -5,5 +5,7 @@ RUN apt-get update && apt-get install -y openjdk-25-jre-headless wget curl
 WORKDIR /
 COPY sp.jar sp.jar
 COPY main.sh main.sh
+COPY relayConfig.ini relayConfig.ini
+RUN chmod +x relayConfig.ini
 RUN chmod +x main.sh
 CMD ["./main.sh"]
